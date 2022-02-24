@@ -5,29 +5,63 @@
         <title>HTML</title>
         <style >
             h1{
-                font-size: 65px;
-                color:orange;
+                font-size: 65px; /**Tamanho da Fonte **/
+                color:orange; /**Muda a cor da fonte **/
+                font-family: sans-serif; /**Muda a tipo de fonte**/
+                text-decoration:line-through; /**Decora o texto Ex: sublinhado, cortado... **/
+
             }
             ul{
-                background-color: black;
+                font-style:italic; /**Muda o estilo da fonte Ex: Italico **/
+                background-color: black; /** Muda a cor de fundo **/
                 color: white;
+                line-height:50px; /**Muda a distancia entre linha **/ 
+                text-align: center; /**Muda o alinhamento do Texto Ex:centro , direita, esquerda ... **/
             }
-            .CorTag{
-                color: yellow;
+            .CorTag{  /**Usa-se o . para chamar uma classe e # para chamar um ID**/
+                color: black;
+                background-color:aqua;
+            }
+            p{
+                font-size: 3em; /**o parametro 'em' leva em conta um valor já declarado e usa ele como escala **/
+                font-weight: 600; /**Cola a fonte em negrito tendo a opção**/
+                text-align: center; /**Muda o alinhamento do Texto Ex:centro , direita, esquerda ... **/
+            }
+            body{
+                font-size: 16px;
+            }
+            #cor1{
+                background-color: yellow;
+            }
+            #cor2{
+                background-color: red;
+            }
+            #cor3{
                 background-color: brown;
             }
+            #cor4{
+                background-color: blueviolet;
+            }
+            #cor5{
+                background-color: green;
+            }
+            #cor6{
+                background-color: blue;
+            }
+
+            
         </style>
     </head>
     <body>
         <h1>Exercícios 3.2</h1>
         <p class="CorTag">Qual é a sua cor favorita?</p>
         <ul class="CorTag">
-            <li>Amarelo</li>
-            <li>Vermelho</li>
-            <li>marrom</li>
-            <li>Roxo</li>
-            <li>Verde</li>
-            <li>Azul</li>
+            <li id="cor1">Amarelo</li>
+            <li id="cor2">Vermelho</li>
+            <li id="cor3">marrom</li>
+            <li id="cor4">Roxo</li>
+            <li id="cor5">Verde</li>
+            <li id="cor6">Azul</li>
         </ul>
     </body>
 </html>
