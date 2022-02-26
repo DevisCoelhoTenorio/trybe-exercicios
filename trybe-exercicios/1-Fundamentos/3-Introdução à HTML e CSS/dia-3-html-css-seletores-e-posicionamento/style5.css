@@ -1,0 +1,49 @@
+ol li{
+    background-color: yellow;
+    text-transform: uppercase;
+}
+ol li:nth-of-type(even){
+    text-transform:none;
+    color:green;
+}
+h1, h2, h3{
+    color: red;
+}
+h1 em, h2 em{
+    font-size:40px;
+    border:1px solid black;
+}
+li{
+    font-size: 20px;
+}
+li em {
+    font-weight: 700;
+}
+#Lingua li:not(:nth-child(n + 4)){
+    color:blue;
+}
+.Java{
+    background-color: pink;
+}
+#site li a:hover{
+    font-weight: 700;
+}
+#site li a[href*="stackoverflow"] {
+    color: orange;
+  }
+  
+  #site li a[href*="w3schools"] {
+    color: green;
+  }
+  
+  #site li a[href*="mozilla"] {
+    color: black;
+  }
+  
+  #site li a[href*="devdocs"] {
+    color: yellow;
+  }
+  
+  #site li a[href*="trybe"] {
+    color: green;
+  }
