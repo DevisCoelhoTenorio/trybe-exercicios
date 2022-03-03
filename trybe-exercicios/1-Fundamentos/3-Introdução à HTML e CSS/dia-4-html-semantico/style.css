@@ -45,10 +45,11 @@ section ul{
     text-align: center;
 }
 
-.Primeiro{
+/* .Primeiro{
     display: inline-block;
-    text-align: center;
-    
+    text-align: center; */
+.Primeiro li{
+     margin: auto;  
 }
 main li{
     display: inline;
