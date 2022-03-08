@@ -1,17 +1,18 @@
 let numbers=[5,9,3,19,70,8,100,2,35,27];
+let impar=0;
 
-let max=[0];
-
-//var total=0;
-
-for(var cont =0; cont < numbers.length; cont +=1){
-    if(numbers[cont]>max){
-        max =numbers[cont];
+for(var cont=0; cont < numbers.length; cont += 1){
+    if(numbers[cont]%2 !== 0){
+        impar += 1;
     }
 }
+if(impar=== 0){
+console.log('Nenhum valor ímpar encontrado')
+}
+else{
+console.log(impar);
+}
 
-
-console.log(max);
     
 
 
@@ -36,4 +37,13 @@ console.log(max);
     //     console.log(total/numbers.length);
     // }
     
+//var total=0;
 
+// for(var cont =0; cont < numbers.length; cont +=1){
+//     if(numbers[cont]>max){
+//         max =numbers[cont];
+//     }
+// }
+
+
+// console.log(max);
