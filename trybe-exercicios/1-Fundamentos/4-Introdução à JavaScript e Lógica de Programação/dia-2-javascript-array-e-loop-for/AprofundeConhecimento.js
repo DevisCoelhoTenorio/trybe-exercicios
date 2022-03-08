@@ -8,7 +8,7 @@ for (var cont = 0; cont < numbers.length; cont+= 1){
 
     if(cont === numbers.length-1){
 
-        console.log(total);
+        console.log(total/numbers.length);
     }
     
     
