@@ -1,17 +1,50 @@
 let numbers=[5,9,3,19,70,8,100,2,35,27];
-let impar=0;
+let menor=numbers[0];
 
-for(var cont=0; cont < numbers.length; cont += 1){
-    if(numbers[cont]%2 !== 0){
-        impar += 1;
+for(var cont =0; cont < numbers.length; cont +=1){
+    if(numbers[cont]< menor){
+        menor =numbers[cont];
     }
 }
-if(impar=== 0){
-console.log('Nenhum valor ímpar encontrado')
-}
-else{
-console.log(impar);
-}
+
+
+console.log(menor);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// for(var cont=0; cont < numbers.length; cont += 1){
+//     if(numbers[cont]%2 !== 0){
+//         impar += 1;
+//     }
+// }
+// if(impar=== 0){
+// console.log('Nenhum valor ímpar encontrado')
+// }
+// else{
+// console.log(impar);
+// }
 
     
 
@@ -39,11 +72,3 @@ console.log(impar);
     
 //var total=0;
 
-// for(var cont =0; cont < numbers.length; cont +=1){
-//     if(numbers[cont]>max){
-//         max =numbers[cont];
-//     }
-// }
-
-
-// console.log(max);
