@@ -8,6 +8,15 @@ for (var cont = 0; cont < numbers.length; cont+= 1){
 
     if(cont === numbers.length-1){
 
+        if(total/numbers.length > 20){
+
+            console.log("Valor maior que 20");
+        }
+        else{
+
+            console.log("Valor menor que 20");
+        }
+
         console.log(total/numbers.length);
     }
     
