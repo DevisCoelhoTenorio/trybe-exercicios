@@ -3,10 +3,11 @@ let numbers=[];
 
 for(var cont =1; cont <= 25; cont +=1){
     numbers.push(cont);
+    console.log(numbers[cont-1]/2);
 }
 
 
-console.log(numbers);
+
 
 
 
