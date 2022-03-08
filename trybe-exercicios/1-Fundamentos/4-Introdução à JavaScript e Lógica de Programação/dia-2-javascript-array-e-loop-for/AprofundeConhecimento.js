@@ -1,14 +1,12 @@
-let numbers=[5,9,3,19,70,8,100,2,35,27];
-let menor=numbers[0];
+let numbers=[];
 
-for(var cont =0; cont < numbers.length; cont +=1){
-    if(numbers[cont]< menor){
-        menor =numbers[cont];
-    }
+
+for(var cont =1; cont <= 25; cont +=1){
+    numbers.push(cont);
 }
 
 
-console.log(menor);
+console.log(numbers);
 
 
 
