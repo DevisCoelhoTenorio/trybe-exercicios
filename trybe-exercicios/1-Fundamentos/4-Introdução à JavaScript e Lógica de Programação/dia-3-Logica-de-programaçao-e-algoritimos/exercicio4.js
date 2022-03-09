@@ -19,4 +19,4 @@ let num=0;
         }
         }
         
-console.log(numerosPrimos);
+console.log(numerosPrimos[numerosPrimos.length-1]);
