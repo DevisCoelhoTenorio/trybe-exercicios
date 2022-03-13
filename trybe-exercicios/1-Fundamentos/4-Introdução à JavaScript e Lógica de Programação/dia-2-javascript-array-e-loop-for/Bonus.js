@@ -21,4 +21,17 @@ console.log(numbers.sort(function(a,b){
         return 0;
     }));
 
+//03
+let numbers2= [5,9,3,19,70,8,100,2,35,27];
+let multiplicado =[];
+
+for ( let key =0; key <numbers2.length; key += 1){
+    if(key < numbers2.length -1){
+        multiplicado.push(numbers2[key]*numbers2[key +1]);
+    }else{
+        multiplicado.push(numbers2[key]*2);
+    }
+}
+console.log(multiplicado);
+
 
