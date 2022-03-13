@@ -1,15 +1,12 @@
 let numbers= [5,9,3,19,70,8,100,2,35,27];
 
-let snumbers=[];
+console.log(numbers.sort(function(a,b){
+        if(a > b) return 1; //inverter o retorno entre os if muda o ordenamento de crescente para decrescente
 
-for (let index =1; index<numbers.length; index +=1){
-    for (let sindex = 0; sindex <index; sindex +=1){
+        if(a <b) return -1;
 
-        
+        return 0;
+    }));
 
-            snumbers.push(numbers[sindex]*numbers[index]);
-            
-        }
-    }
-
-console.log(snumbers);
+// sort necessita de uma função para ordenar numeros.
+// portanto deve ser usasdo .sort(function(a,b){ })
