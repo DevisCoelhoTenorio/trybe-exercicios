@@ -10,13 +10,22 @@
     <script>
       const paragraph = document.getElementById("paragraph");
       paragraph.style.color = "red";
-      document.getElementById("page-title").innerText = "Novo Título";
-      document.getElementById("second-paragraph").innerText ="Olha nós aqui de novo";
+
+    //   document.getElementById("page-title").innerText = "Novo Título";
+      document.querySelector("#page-title").innerText = "Novo Título";
+
+    //   document.getElementById("second-paragraph").innerText ="Olha nós aqui de novo";
+      document.querySelector("#second-paragraph").innerText ="Olha nós aqui de novo";
+
       document.getElementById("second-paragraph").style.color = "blue";
       document.getElementById("subtitle").innerText = "Novo novamente";
 
-      document.getElementsByClassName("paragrafo")[0].innerText ="Título novo de novo";
-      document.getElementsByClassName("paragrafo")[1].style.color="black";
+     // document.getElementsByClassName("paragrafo")[0].innerText ="Título novo de novo";
+     document.querySelectorAll(".paragrafo")[0].innerText ="Título novo de novo";
+
+    //  document.getElementsByClassName("paragrafo")[1].style.color="black";
+    document.querySelector(".paragrafo")[1].style.color="black";
+
     </script>
   </body>
 </html>
