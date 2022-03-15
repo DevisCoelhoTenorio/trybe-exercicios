@@ -42,6 +42,47 @@
       </section>
     </main>
     <script>
+
+        function mudaTexto(){
+            let paragrafo = document.getElementsByTagName("p")[1];
+            paragrafo.innerText = "Está trabalhando e realizado"
+        }
+        mudaTexto();
+
+        function mudacor1(){
+            let quadrado1 = document.getElementsByClassName("main-content")[0];
+            quadrado1.style.background = "rgb(76,164,109)"
+        }
+        mudacor1();
+
+        function mudarcor2(){
+           let quadrado2 =document.getElementsByClassName("center-content")[0];
+           quadrado2.style.background ="white" 
+        }
+        mudarcor2();
+
+        function certo(){
+            let titulo = document.getElementsByTagName("h1")[0];
+            titulo.innerText = "Exercício 5.1 - JavaEscripit"
+        }
+        certo();
+
+        function low(){
+            let paragrafo1 =document.getElementsByTagName("p")[0];
+            paragrafo1.innerHTML = paragrafo1.innerHTML.toUpperCase();
+
+        }
+        low();
+
+        function mostrarPara(){
+            let paragrafos = document.getElementsByTagName('p');
+            for(let index =0; index < paragrafos.length; index += 1){
+                console.log(paragrafos[index].innerHTML);
+            }
+        }
+        mostrarPara();
+
+
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
