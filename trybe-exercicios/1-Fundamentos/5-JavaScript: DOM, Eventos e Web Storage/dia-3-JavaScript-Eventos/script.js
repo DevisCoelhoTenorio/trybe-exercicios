@@ -106,3 +106,5 @@ function mudarSexta (diasSexta){
 };
 let diasDeSexta =[ 4, 11 ,18 ,25];
 mudarSexta(diasDeSexta);
+
+
