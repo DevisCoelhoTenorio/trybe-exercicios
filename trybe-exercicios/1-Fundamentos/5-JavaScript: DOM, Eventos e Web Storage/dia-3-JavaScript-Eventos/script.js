@@ -61,12 +61,12 @@ function pintarFeriados(){
     let pegarBotaoFeriado = document.getElementById('btn-holiday');
     let pegarFeriados = document.querySelectorAll('.holiday');
     let corDeFundo = 'red';
-    let novaCor = 'white';
+    let novaCor = 'rgb(238, 238, 238)';
+
 
     pegarBotaoFeriado.addEventListener('click', function(){
 
         for (let index =0; index < pegarFeriados.length; index += 1){
-            console.log(pegarFeriados[index]);
 
             if(pegarFeriados[index].style.backgroundColor === novaCor){
                 pegarFeriados[index].style.backgroundColor = corDeFundo;
@@ -107,4 +107,42 @@ function mudarSexta (diasSexta){
 let diasDeSexta =[ 4, 11 ,18 ,25];
 mudarSexta(diasDeSexta);
 
+function zoom(){
+    let days = document.querySelector('#days');
 
+    days.addEventListener('mouseover', function (event){
+        event.target.style.fontSize = '30px';
+        event.target.style.fontWeight ='600';
+
+    })
+}
+zoom();
+function zoomout(){
+    let days = document.querySelector('#days');
+
+    days.addEventListener('mouseout', function (event){
+        event.target.style.fontSize = '20px';
+        event.target.style.fontWeight ='200';
+
+    })
+}
+zoomout();
+
+function newTaskSpan(task){
+    let tasksContainer = document.querySelector('.my-tasks');
+    let taskName =document.createElement('span');
+
+    taskName.innerText = task;
+    tasksContainer.appendChild(taskName);
+}
+newTaskSpan('jogar bola');
+
+function newTaskDiv(color){
+    let taskContainer = document.querySelector('.my-task');
+    let newTask = document.createElement('div');
+
+    newTask.className = 'task';
+    newTask.style.backgroundColor = color;
+    taskContainer.appendChild(newTask);
+};
+newTaskDiv('green');
