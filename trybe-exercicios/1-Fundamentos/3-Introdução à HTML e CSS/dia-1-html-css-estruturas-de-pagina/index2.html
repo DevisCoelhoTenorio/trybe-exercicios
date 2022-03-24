@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color</title>
+    <style>
+        .container{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .box{
+            width:200px;
+            height: 200px;
+            margin:10px;
+        }
+        .background-rgb{
+            background-color: rgb(86, 121, 80);
+        }
+        .background-rgba{
+            background-color: rgba(86,121,80,0.74);
+        }
+        .background-hsl{
+            background-color: hsl(111, 20%, 39%);
+        }
+        .background-hsla{
+            background-color: hsla(111, 20%, 39%, 0.74);
+        }
+        .background-hexa{
+            background-color:  #567950;
+        }
+        .background-hexa-transparent{
+            background-color:  #567950AB;
+        }
+        .background-transparent{
+            border:1px solid green;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box background-rgb">Cor de fundo com função rgb()</div>
+        <div class="box background-rgba">Cor de fundo com transparência e função rgba()</div>
+        <div class="box background-hsl">Cor de fundo com função hsl()</div>
+        <div class="box background-rgba">Cor de fundo com transparência e função hsla()</div>
+        <div class="box background-hexa">Cor de fundo hexadecimal</div>
+        <div class="box background-hexa-transparent">Cor de fundo hexadecimal com transparência</div>
+        <div class="box background-transparent">Background transparente</div>
+    </div>
+</body>
+</html>
