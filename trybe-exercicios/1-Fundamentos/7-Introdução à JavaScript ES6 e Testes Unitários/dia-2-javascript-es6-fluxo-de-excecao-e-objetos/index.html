@@ -15,25 +15,34 @@
   <button id='button'>Somar</button>
   <p id='result'></p>
   <script>
-    const verificarEntradas = (valor1, valor2) => {
+    const verificarEntradasEmBranco = (valor1, valor2) => {
       if (valor1 === "" || valor2 === ""){
         throw new Error('Campo em branco!');
       }
     };
+
+    const verificarEntradasNumeros = (valor1, valor2) => {
+    if (isNaN(valor1) || isNaN(valor2)){
+        throw new Error ('O Valor não é numero');
+    }
+    };
+
     function sum() {
       const value1 = document.getElementById('value1').value;
       const value2 = document.getElementById('value2').value;
 
       try {
-      verificarEntradas(value1, value2);
+      verificarEntradasEmBranco(value1, value2);
+      verificarEntradasNumeros(value1, value2);
       const result = parseInt(value1) + parseInt(value2);
       document.getElementById('result').innerText = `Resultado: ${result}`;
+      }catch (error){
+          document.getElementById('result').innerText = `Erro: ${error.message}`;
+        // throw error.message;
+      }
+      finally{
       document.getElementById('value1').value = '';
       document.getElementById('value2').value = '';
-
-      }catch (error){
-          alert(`Erro: ${error.message}`);
-        // throw error.message;
       }
     };
 
