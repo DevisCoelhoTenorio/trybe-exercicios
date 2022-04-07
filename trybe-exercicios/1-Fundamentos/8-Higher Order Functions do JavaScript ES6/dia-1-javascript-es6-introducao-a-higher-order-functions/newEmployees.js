@@ -3,7 +3,7 @@ const cadastrar = (nomeCompleto) => {
   return {nomeCompleto, email: `${email}@trybe.com`};
 };
 
-const newEmployees = (func) => {
+const newEmployees= (func) => {
   const employees = {
     id1: func('Pedro Guerra'),
     id2: func('Luiza Drumond'),
