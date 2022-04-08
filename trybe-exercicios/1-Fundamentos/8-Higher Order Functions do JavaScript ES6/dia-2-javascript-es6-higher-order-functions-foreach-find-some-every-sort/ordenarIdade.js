@@ -7,6 +7,12 @@ const people = [
   ];
   
   // Adicione se código aqui
-  people.sort((nome1, nome2) => nome2.age - nome1.age);
+//   people.sort((nome1, nome2) => nome2.age - nome1.age);
+// people.sort(function(a, b) {
+// if (a.name < b.name) return -1;
+// if (a.name > b.name) return 1;
+// });
 
+people.sort((a, b) => a.name < b.name ? -1 : 1)
+  
   console.log(people);
