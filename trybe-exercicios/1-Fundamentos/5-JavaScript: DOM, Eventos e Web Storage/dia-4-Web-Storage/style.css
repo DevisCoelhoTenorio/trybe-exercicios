@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding: 0;
+}
+#conf{
+    display: flex;
+   flex-wrap: wrap;
+   max-width: 1000px;
+   padding-left: 250px;
+   padding-top: 15px;
+
+}
+header{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+/* #corpo{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 30px;
+
+} */
+.bloco{
+    max-width: 50%;
+    flex-wrap: wrap;
+}
+
+#corpo > section{
+    flex: 2 2 100px;
+}
+section{
+    display: inline-block;
+    width: 49%;
+
+}
+body{
+    padding: 30px;
+}
+h2{
+    text-align: center;
+}
