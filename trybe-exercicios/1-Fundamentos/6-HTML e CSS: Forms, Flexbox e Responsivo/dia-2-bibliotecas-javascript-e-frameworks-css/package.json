@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "pikaday": "^1.8.2",
+    "popup-validation": "^3.0.3"
+  }
+}
