@@ -62,6 +62,7 @@ const books = [
   ];
   
   // Adicione o código do exercício aqui:
-  const tresIniciais = books.find((livro) => (livro.author.name.split(' ').filter((livro) => livro.endsWith('.')).length === 3)).name;
+  const tresIniciais = books.find((livro) => (livro.author.name.split(' ').filter((livro) => 
+  livro.includes('.')).length === 3)).name;
   
   console.log(tresIniciais);
