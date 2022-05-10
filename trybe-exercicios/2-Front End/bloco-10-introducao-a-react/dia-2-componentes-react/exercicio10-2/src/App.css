@@ -25,3 +25,19 @@ main {
 body {
   background-color: #333;
 }
+header{
+  border: 1px solid black;
+  text-align: center;
+  background-color: rgb(133, 128, 128);
+  height: 50px;
+  box-shadow: 2px 2px 2px rgb(13, 250, 13);
+  font-size: 50px;
+  
+}
+footer{
+  border: 1px solid black;
+  text-align: center;
+  background-color: rgb(133, 128, 128);
+  height: 50px;
+  font-size: 30px;
+}
