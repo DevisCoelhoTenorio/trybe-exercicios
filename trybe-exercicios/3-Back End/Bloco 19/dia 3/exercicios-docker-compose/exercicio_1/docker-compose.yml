@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  missao_trybe:
+    build: missao_trybe/
+    ports:
+    - 3000:80
+    volumes:
+    - ./missao_trybe:/usr/local/apache2/htdocs
+
+
+   
